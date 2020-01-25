@@ -85,7 +85,7 @@
 	<div class="navbar navbar-expand-md navbar-dark bg-indigo fixed-top">
 		<div class="navbar-brand">
 			<a href="{{ URL::to('/')}}" class="d-inline-block">
-				<img src="{{asset("public/Theme/global_assets/images/logo_light.png")}}" alt="">
+				<img src="{{asset("public/Theme/global_assets/images/Capture.png")}}" alt="">
 			</a>
 		</div>
 
@@ -182,34 +182,29 @@
 				<!-- Main navigation -->
 				<div class="card card-sidebar-mobile">
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
-
+					
 						<!-- Main -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
 						<li class="nav-item">
-							<a href="{{ URL::to('/Dashboard')}}" class="nav-link">
-								<i class="icon-home4"></i>
+						<a href="{{ URL::to('/Dashboard')}}" class="nav-link"><i class="icon-home2"></i>
 								<span>
 									Dashboard
-								</span>
-							</a>
-						</li>
+								</span></a></li>
 						<li class="nav-item">
-							<a href="{{ URL::to('/newevent')}}" class="nav-link">
-								<i class="icon-quill2"></i>
+						<a href="{{ URL::to('/Category')}}" class="nav-link"><i class="icon-quill2"></i>
 								<span>
-									Create Event
-								</span>
-							</a>
-						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-cart"></i> <span>Stocks</span></a>
-							<ul class="nav nav-group-sub" data-submenu-title="Stocks">
-								<li class="nav-item"><a href="{{ URL::to('/Stock')}}" class="nav-link">Stock</a></li>
-								<li class="nav-item"><a href="{{ URL::to('/Subcategory')}}" class="nav-link">Sub Category</a></li>
-								<li class="nav-item"><a href="{{ URL::to('/Category')}}" class="nav-link">Category</a></li>
+									Category
+								</span></a></li>
+								<li class="nav-item">
+						<a href="{{ URL::to('/adproductslist')}}" class="nav-link"><i class="icon-cart5"></i>
+								<span>
+									Products
+								</span></a></li>
 								
-							</ul>
+								
+							
 						</li>
+						
 						<!-- /main -->
 
 					

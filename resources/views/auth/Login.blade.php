@@ -35,8 +35,8 @@
             </div>
 
             <div class="text-center">
-                <a href="login_password_recover.html">Forgot password?</a>
-            </div>
+               <!--  <a href="login_password_recover.html">Forgot password?</a>
+             --></div>
         </div>
     </div>
 </form>

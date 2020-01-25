@@ -16,7 +16,7 @@ class CategoryExcel implements FromCollection
     public function collection()
     {
         //
-        return DB::table('icategory')->where('Admin_Id',session()->get('Admin_Id'))->select('Category_Name','created_at')->get();
+        return DB::table('icategory')->select('Category_Name','created_at')->get();
 
     }
     public function headings(): array

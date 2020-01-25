@@ -90,7 +90,7 @@
 
 				<div class="navbar-collapse collapse" id="navbar-footer">
 					<span class="navbar-text">
-						&copy; 2018 - 2019. <a href="#">Mandap Web App </a> by <a href="#" target="_blank">Asthvinayak Softsolution PVT. LMT.</a>
+						&copy; 2018 - <script>document.write(new Date().getFullYear());</script> <a href="#">iFountit Web App </a> by <a href="#" target="_blank">Hemal & Frds</a>
 					</span>
 
 					<ul class="navbar-nav ml-lg-auto">

@@ -12,6 +12,16 @@ use Session;
 
 class CategoryController extends Controller
 {
+    public function pcatlist(Request $request)
+    {
+        $Category = category::where('Category_Name', 'LIKE', '%'.$request->input('term', '').'%')->get(['Id as id', 'Category_Name as text']);
+        return ['results' => $Category];
+    }
+    public function categorygetall()
+    {
+        $category=category::all();
+        return response()->json($category);
+    }
     public function category(Request $request)
     {
         $Category = category::where('Admin_Id',session()->get('Admin_Id'))->where('Category_Name', 'LIKE', '%'.$request->input('term', '').'%')->get(['Id as id', 'Category_Name as text']);

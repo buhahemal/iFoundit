@@ -1,5 +1,5 @@
 @extends("auth.LayoutDashboard.Layout")
-@section("title","M.D. Group")
+@section("title","iFoundit")
 @section("main-content")
 	<script src="{{("public/CustomjsForView/CategoryCs.js")}}"></script>
 <div class="content"> 
@@ -23,7 +23,7 @@
                                         <div class="col-md-4">
 										    <div class="form-group">
 											   
-											    <input type="text" autofocus reuired class="form-control Category" placeholder=" e.g. Parle">
+											    <input type="text" autofocus reuired class="form-control Category" placeholder=" e.g. Phone">
 										    </div>
                                             
                                         </div>
