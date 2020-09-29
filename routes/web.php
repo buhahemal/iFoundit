@@ -28,18 +28,18 @@ Route::get('UserRegister','usercontroller@UserRegister');
 Route::get('searchproduct','usercontroller@searchproduct');
 Route::post('verifycode','usercontroller@verification');
 
-
+ 
 
 Route::group(['middleware'=>'UserLoginCheck'],function () {
 Route::post('UpUserRegister','usercontroller@UpUserRegister');
-Route::post('getemailid','ItemController@getemailid');
+Route::post('getemailid','Itemcontroller@getemailid');
 Route::get('UserProfile','usercontroller@UserProfile');
-Route::post('claimaccept','ItemController@claimaccept');
-Route::post('notificationupdate','ItemController@notificationupdate');
-Route::post('checknotification','ItemController@checknotification');
-Route::post('claimuser','ItemController@claimuser');
-Route::post('UserItemFound','ItemController@UserItemFound');
-Route::get('FoundItem','ItemController@FoundItem');
+Route::post('claimaccept','Itemcontroller@claimaccept');
+Route::post('notificationupdate','Itemcontroller@notificationupdate');
+Route::post('checknotification','Itemcontroller@checknotification');
+Route::post('claimuser','Itemcontroller@claimuser');
+Route::post('UserItemFound','Itemcontroller@UserItemFound');
+Route::get('FoundItem','Itemcontroller@FoundItem');
 Route::get('Userlogout','usercontroller@Userlogout');
 Route::get('categorygetall','CategoryController@categorygetall');
 Route::get('Category','CategoryController@Returnview');
@@ -56,7 +56,7 @@ Route::get('Stock','StockController@ReturnView');
 Route::group(['middleware'=>'AdminLoginCheck'],function () {
     Route::get('Dashboard','iauthadmin@index');
     Route::get('logout','iauthadmin@destroy');
-    Route::post('AdminPostLoseitem','ItemController@AdminPostLoseitem');
+    Route::post('AdminPostLoseitem','Itemcontroller@AdminPostLoseitem');
     Route::get('pcatlist','CategoryController@pcatlist')->name('pcatlist');
     Route::get('categorylist','CategoryController@category')->name('categorylist');
     Route::get('CategoryExport', 'CategoryController@export')->name('ExcelCategoryExport');
@@ -68,6 +68,6 @@ Route::group(['middleware'=>'AdminLoginCheck'],function () {
     Route::post('getcategory','CategoryController@CheckCategory');
     Route::post('deletecategory','CategoryController@destroy');
     Route::post('StoreCategory','CategoryController@store');
-    Route::get('adproductslist','ItemController@aditem');
+    Route::get('adproductslist','Itemcontroller@aditem');
 
 });

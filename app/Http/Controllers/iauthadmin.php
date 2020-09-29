@@ -17,7 +17,7 @@ class iauthadmin extends Controller
     public function index()
     {
         //
-        return view('Auth.Dashboard');
+        return view('auth.Dashboard');
     }
 
     /**
