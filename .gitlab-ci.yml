@@ -1,0 +1,12 @@
+demo_job_1:
+     tags:
+       - test
+     script:
+       - git -C /opt/lampp/htdocs/ pull
+       - cd /opt/lampp/htdocs
+#       - php artisan db:wipe 
+#       - php artisan optimize:clear
+#       - php artisan migrate:fresh
+#       - php artisan optimize:clear
+#       - php artisan db:seed
+#       - php artisan optimize:clear
